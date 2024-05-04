@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta charset="UTF-8" />
@@ -13,8 +13,10 @@
     />
     <link rel="stylesheet" href="/public/css/main.css" />
   </head>
-  <body class="font-monstserrat">
-    <header class="bg-primary z-[9999]">
+  <body
+    class="font-monstserrat bg-primary selection:bg-primary selection:text-secondary"
+  >
+    <header class="bg-primary z-[9999]" id="home">
       <div class="container">
         <div class="flex justify-between items-center relative">
           <a href="#home">
@@ -48,28 +50,28 @@
               <ul
                 class="flex flex-wrap justify-between items-center gap-1 lg:justify-around lg:gap-5"
               >
-                <li>
+                <li class="hover:scale-110 transition-all ease-out">
                   <a
-                    href="#"
+                    href="#home"
                     class="font-bold text-xl drop-shadow-lg text-primary lg:text-secondary"
                     >Home</a
                   >
                 </li>
-                <li>
+                <li class="hover:scale-110 transition-all ease-out">
                   <a
-                    href="#"
+                    href="#tentang"
                     class="font-bold text-xl drop-shadow-lg text-primary lg:text-secondary"
                     >Tentang</a
                   >
                 </li>
-                <li>
+                <li class="hover:scale-110 transition-all ease-out">
                   <a
                     href="#"
                     class="font-bold text-xl drop-shadow-lg text-primary lg:text-secondary"
                     >Paket</a
                   >
                 </li>
-                <li>
+                <li class="hover:scale-110 transition-all ease-out">
                   <a
                     href="#"
                     class="font-bold text-xl drop-shadow-lg text-primary lg:text-secondary"
@@ -82,6 +84,46 @@
         </div>
       </div>
     </header>
+    <section id="tentang" class="pt-32 text-secondary">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full md:w-1/2">
+            <div class="mb-12">
+              <h3 class="text-xs md:text-sm drop-shadow-md">
+                Cepat, Murah, Tanpa Batasan Kuota
+              </h3>
+              <h1 class="font-bold text-2xl lg:text-3xl drop-shadow-md mt-2">
+                MEDIA TANPA BATAS
+              </h1>
+              <p
+                class="font-medium text-sm lg:text-xl drop-shadow-md mt-3 pr-4"
+              >
+                Bebas akses internet dengan kecepatan penuh, dengan harga murah,
+                dan tanpa batasan kuota, miliki layanan internet kami di rumah
+                anda.
+              </p>
+              <button
+                class="relative overflow-hidden font-bold bg-secondary text-primary rounded-lg mt-3 p-3 drop-shadow-md before:bg-tertiary before:absolute before:content-[''] before:right-0 before:top-0 before:bottom-0 before:left-0 before:-z-10 before:scale-x-0 before:origin-left before:hover:scale-x-100 before:rounded-lg before:transition-all before:duration-500 before:ease-in"
+              >
+                Cek Sekarang
+              </button>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2">
+            <div class="rounded-md overflow-hidden group shadow-md">
+              <img
+                src="/dist/img/herohome.png"
+                alt="globe"
+                width="w-full"
+                class="grayscale group-hover:grayscale-0 group-hover:scale-120 transition-all duration-700 ease-in"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="paket" class="pt-36 pb-32"></section>
+    <section id="portofolio" class="pt-36 pb-16 bg-secondary"></section>
     <script src="/public/js/script.js"></script>
   </body>
 </html>
