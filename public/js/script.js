@@ -1,3 +1,5 @@
+AOS.init();
+
 // Hamburger Menu
 const hamburger = document.querySelector("#hamburger-btn");
 const mobileNav = document.querySelector("#mobile-nav");
