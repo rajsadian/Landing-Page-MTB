@@ -19,4 +19,6 @@
     @apply -rotate-45 -translate-y-3 transition-all duration-700 ease-in-out bg-tertiary;
 }
 
-@import "./aos/dist/aos.css";
+.fixed-nav {
+    @apply fixed drop-shadow-md transition-all duration-200 ease-out;
+}
